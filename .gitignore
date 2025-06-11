@@ -1,0 +1,25 @@
+# Arquivos de compilação
+bin/
+obj/
+
+# Arquivos do Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Pacotes NuGet
+packages/
+*.nupkg
+
+# Arquivos de build
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Arquivos temporários
+*~
+*.swp
+*.bak
