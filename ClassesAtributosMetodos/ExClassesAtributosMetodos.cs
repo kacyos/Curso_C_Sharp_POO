@@ -63,5 +63,59 @@ namespace Curso_C_Sharp_POO.ClassesAtributosMetodos
 
             Console.WriteLine("\nSalário médio {0}", media);
         }
+    
+        public static void CalcularRetangulo()
+        {
+            Retangulo retangulo = new Retangulo();
+
+            Console.WriteLine("Entre com os valores da largura e altura do retângulo:");
+            Console.Write("Largura: ");
+            double.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture, out retangulo.Largura);
+            Console.Write("Altura: ");
+            double.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture, out retangulo.Altura);
+
+            Console.WriteLine();
+            Console.WriteLine(retangulo.ToString());
+        }
+
+        public static void CadastrarFuncionario()
+        {
+            Funcionario funcionario = new Funcionario();
+
+            Console.WriteLine("Entre com os dados do funcionário:");
+            Console.Write("Nome: ");
+            funcionario.Nome = Console.ReadLine();
+            Console.Write("Salário Bruto: ");
+            double.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture, out funcionario.SalarioBruto);
+            Console.Write("Imposto: ");
+            double.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture, out funcionario.Imposto);
+
+            funcionario.ImprimirDadosDaOperacao(Operacao.Cadastrar);
+
+            Console.WriteLine();
+
+            Console.Write("Digite a porcentagem para aumentar o salário: ");
+            double.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture, out double porcentagem);
+            funcionario.AumentarSalario(porcentagem);
+
+            funcionario.ImprimirDadosDaOperacao(Operacao.Atualizar);
+        }
+
+        public static void CalcularNotaFinal() { 
+            Aluno aluno = new Aluno();
+
+            Console.Write("Nome do aluno: ");
+            aluno.Nome = Console.ReadLine();
+
+            Console.WriteLine("Digite as três notas do aluno:");
+            Console.Write("Nota 1: ");
+            double.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture, out aluno.Nota1);
+            Console.Write("Nota 2: ");
+            double.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture, out aluno.Nota2);
+            Console.Write("Nota 3: ");
+            double.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture, out aluno.Nota3);
+
+            aluno.ImprimirSituacao();
+        }
     }
 }

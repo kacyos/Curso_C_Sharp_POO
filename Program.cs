@@ -19,7 +19,10 @@ namespace Curso_C_Sharp_POO
                     {"Calcular áreas: Triângulo, Círculo, Trapézio, Quadrado e Retângulo", ExEstruturaSequencial.CalcularAreas},
 
                     {"####### Classes #######\nComparar idades", ExClassesAtributosMetodos.ComparaIdades },
-                    {"Calcular salário médio", ExClassesAtributosMetodos.MediaSalario }
+                    {"Calcular salário médio", ExClassesAtributosMetodos.MediaSalario },
+                    {"Calcular retângulo", ExClassesAtributosMetodos.CalcularRetangulo },
+                    {"Cadastrar funcionário", ExClassesAtributosMetodos.CadastrarFuncionario },
+                    {"Calcular nota final do aluno", ExClassesAtributosMetodos.CalcularNotaFinal }
                 });
 
             central.SelecionarEExecutar();
