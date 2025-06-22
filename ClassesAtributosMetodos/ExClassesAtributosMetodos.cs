@@ -117,5 +117,18 @@ namespace Curso_C_Sharp_POO.ClassesAtributosMetodos
 
             aluno.ImprimirSituacao();
         }
+   
+        public static void ConversorRealDolar()
+        {
+            Console.Write("Qual é a cotação do dólar? ");
+            double.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture, out double cotacao);
+            
+            Console.Write("Quantos dólares você vai comprar? ");
+            double.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture, out double valor);
+
+            double valorConvertido = ConversorDeMoeda.Converter(valor, cotacao);
+
+            Console.WriteLine($"Valor a ser pago em reais = {valorConvertido.ToString("F2", CultureInfo.InvariantCulture)}");
+        }
     }
 }

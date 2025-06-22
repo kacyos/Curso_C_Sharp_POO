@@ -22,7 +22,8 @@ namespace Curso_C_Sharp_POO
                     {"Calcular salário médio", ExClassesAtributosMetodos.MediaSalario },
                     {"Calcular retângulo", ExClassesAtributosMetodos.CalcularRetangulo },
                     {"Cadastrar funcionário", ExClassesAtributosMetodos.CadastrarFuncionario },
-                    {"Calcular nota final do aluno", ExClassesAtributosMetodos.CalcularNotaFinal }
+                    {"Calcular nota final do aluno", ExClassesAtributosMetodos.CalcularNotaFinal },
+                    {"Conversor dólar x real", ExClassesAtributosMetodos.ConversorRealDolar }
                 });
 
             central.SelecionarEExecutar();
